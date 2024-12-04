@@ -29,11 +29,18 @@ public class MyString {
         if (str1.length() > str2.length()) {
             return false;
         } 
-         if (str1.indexOf(str2) != -1) {
-           return true;  
+        for (int i = 0; i <= str1.length() - str2.length(); i++) {
+            boolean ifContains = true; 
+            for (int j = 0; j < str2.length(); j++) {
+                if (str1.charAt(i + j) != str2.charAt(j)) {
+                    ifContains = false;  
+                    break; 
+                }
+            }
+            if (ifContains) {
+                return true;
+            }   
         }
-
-        return false;  
+        return false;
     }
 }
-    
