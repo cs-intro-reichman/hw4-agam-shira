@@ -22,10 +22,9 @@ public class Primes {
         for (int i = 2; i < arrayOfPrimes.length; i++) {
             if (arrayOfPrimes[i]) {
                 System.out.println(i);
-                countPrime++;
+                countPrime++; 
             }
         }
-        // Calculating int percent.
         int percent = (int)((countPrime / (double)N) * 100);
         System.out.println("There are " + countPrime + " primes between 2 and " + N + " (" + percent +"% are primes)");
     }
