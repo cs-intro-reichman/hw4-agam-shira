@@ -37,7 +37,7 @@ public class KeywordsDetector {
         }
         for (int i = 0; i < sentences.length; i++) {
             for (int j = 0; j < keywords.length; j++) {
-                if (sentencesLowerCases[i].indexOf(keywordsLowerCases[i])== -1)  {
+                if (sentencesLowerCases[i].indexOf(keywordsLowerCases[j]) != -1)  {
                     System.out.println(sentences[i]);
                 }
             }
