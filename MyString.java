@@ -25,19 +25,15 @@ public class MyString {
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
         str1 = str1.toLowerCase();
-        boolean ifContains = false;
         str2 = str2.toLowerCase();
+        boolean ifContains = false;
         if (str1.length() != str2.length()) {
             return ifContains;
-        } 
-         if (str1.indexOf(str2) != -1) {
-            return ifContains;
-        } else {
-          ifContains = false;
+        }  if (str1.indexOf(str2) != -1) {
+            ifContains = true;  
         }
-        return ifContains;
+
+        return ifContains;  
     }
-    }
-
-
-
+}
+    
